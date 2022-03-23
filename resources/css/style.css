@@ -1,0 +1,177 @@
+/* Universal Styles */
+:root {
+    --color-primary: #54dea4;
+    --color-on-primary: #003823;
+    --color-primary-container: #005235;
+    --color-on-primary-container: #74fbbe;
+    --color-secondary: #67dd89;
+    --color-on-secondary: #003916;
+    --color-secondary-container: #005324;
+    --color-on-secondary-container: #84fba3;
+    --color-outline: #938F99;
+    --color-background-variant: #26262C;
+    --color-background: #1b1b1f;
+    --color-on-background: #e4e1e6;
+    --color-surface: #1b1b1f;
+    --color-on-surface: #e4e1e6;
+    --color-surface-variant: #49454F;
+    --color-on-surface-variant: #CAC4D0;
+    --color-inverse-surface: #e4e1e6;
+    --color-inverse-on-surface: #1b1b1f;
+}
+
+html {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 16px;
+  }
+
+h1 {
+    font-family: Coda, cursive;
+    font-size: 32px;
+}
+
+h2 {
+    font-family: Coda, cursive;
+    font-size: 24px;
+}
+
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+/* Header Section */
+
+.main-content {
+    position: relative;
+    top: 60px;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-background-variant);
+    z-index: 1;
+}
+
+#header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#logo {
+    padding: 10px 20px;
+}
+
+#logo a {
+    font-size: 40px;
+    font-family: Coda, cursive;
+    font-weight: 700;
+    color: var(--color-primary)
+}
+
+nav a {
+    color: var(--color-on-background);
+}
+
+nav a:hover {
+    background-color: var(--color-surface-variant);
+}
+
+nav a {
+    padding: 22.8px 20px;
+    font-size: 16px;
+}
+
+/* Hero Section */
+
+#hero {
+    background-color: var(--color-primary-container);
+    padding: 40px 0;
+}
+
+#hero div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1000px;
+    height: 250px;
+    padding: 40px 0;
+    margin: 0 auto;
+    border-radius: 10px;
+    color: var(--color-primary);
+}
+
+#hero div * {
+    margin: 10px 0;
+}
+
+#hero div h1 {
+    font-size: calc(45px + 1vw);
+    color: var(--color-on-surface);
+}
+
+
+/* Experience Section */
+
+#experience {
+    background-color: var(--color-background);
+    min-height: 250px;
+    padding: 40px 40px;
+    color: var(--color-on-surface);
+}
+
+#experience h1 {
+    text-align: center;
+}
+
+#experience-container {
+    width: 1000px;
+    max-width: 90%;
+    margin: 40px auto;
+}
+
+#experience-container .img-container {
+    max-width: 480px;
+    min-width: 400px;
+    overflow: hidden;
+}
+
+#experience-container img {
+    width: 100%;
+}
+
+.experience-tile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.name {
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.experience-info {
+    max-width: 480px;
+    min-width: 400px;
+}
+
+
+/* Skills Section */
+
+#skills {
+    background-color: var(--color-primary);
+    min-height: 250px;
+}
