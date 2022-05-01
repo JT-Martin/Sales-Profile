@@ -21,6 +21,7 @@
     
     --brand-color: #11253A;
     --brand-color-lighter: #18324E;
+    --brand-color-even-more-lighter: #4F657D;
     --accent-color: #FCD255;
     --accent-color-shade: #FBBD04;
     --light-text-color: #FFF;
@@ -337,10 +338,14 @@ details[open] summary {
     justify-content: space-between;
 }
   
-.active, .accordion:hover {
+button.active {
     background-color: var(--brand-color-lighter);
 }
-  
+
+.accordion:hover {
+    background-color: var(--brand-color-lighter);
+}
+
 .accordion:after {
     content: '\2023';
     color: var(--accent-color);
