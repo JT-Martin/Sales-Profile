@@ -20,7 +20,6 @@
     --color-inverse-on-surface: #1b1b1f;
     
     --brand-color: #11253A;
-    --brand-color-lighter: #18324E;
     --accent-color: #FCD255;
     --accent-color-shade: #FBBD04;
     --light-text-color: #FFF;
@@ -29,11 +28,6 @@
     --light-background: #fff;
     --header-background-color: #262626;
     --header-background-hover: #404040;
-
-    --h1-scale-size: calc(32px + 1vw);
-    --h2-scale-size: calc(24px + 1vw);
-    --h3-scale-size: calc(20.8px + 1vw);
-    --h4-scale-size: calc(16px + 1vw);
 }
 
 html {
@@ -44,18 +38,12 @@ html {
 
 h1 {
     font-family: Coda, cursive;
-    font-size: var(--h1-scale-size);
+    font-size: 32px;
 }
 
 h2 {
     font-family: Coda, cursive;
-    font-size: var(--h2-scale-size);
-}
-
-h3 {
-    font-family: Coda, cursive;
-    font-size: var(--h3-scale-size);
-    color: var(--accent-color);
+    font-size: 24px;
 }
 
 p {
@@ -64,10 +52,6 @@ p {
     font-size: 16px;
     font-weight: 400;
     font-family: 'League Spartan', sans-serif;
-}
-
-section h2 {
-    text-align: center;
 }
 
 
@@ -92,7 +76,6 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 60px;
 }
 
 #logo {
@@ -144,7 +127,7 @@ nav a {
 }
 
 #hero div h1 {
-    font-size: var(--h1-scale-size);
+    font-size: calc(45px + 1vw);
     color: var(--light-text-color);
 }
 
@@ -154,7 +137,7 @@ nav a {
 #experience {
     background-color: var(--dark-background);
     min-height: 250px;
-    padding: 80px 5%;
+    padding: 80px 40px;
     color: var(--light-text-color);
 }
 
@@ -192,7 +175,6 @@ nav a {
 
 .experience-info {
     flex: 1 1 400px;
-    text-align: left;
 }
 
 
@@ -217,7 +199,7 @@ nav a {
     justify-content: center;
     flex-wrap: wrap;
     flex: 1 1 400px;
-    /* gap: 40px; */
+    gap: 40px;
 }
 
 #skills-container ul {
@@ -232,134 +214,4 @@ nav a {
 
 #skills-container ul li {
     margin-bottom: 10px;
-}
-
-/* Tabs */
-/* Style the tab buttons */
-.tablink {
-    background-color: var(--brand-color);
-    color: var(--accent-color);
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: 'Coda';
-    width: 25%;
-    border: 1px solid white;
-    border-bottom-color: var(--dark-background);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    width: 1200px;
-    max-width: 90%;
-    margin: auto;
-    height: 66.8px;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tablink:hover {
-    background-color: var(--brand-color-lighter);
-  }
-  
-  /* Set default styles for tab content */
-  .tabcontent {
-    color: white;
-    display: none;
-    padding: 5%;
-    text-align: center;
-    border: 1px solid white;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-  }
-  
-  /* Style each tab content individually */
-  #Dino {background-color: var(--brand-color-lighter);}
-  #Todd {background-color: var(--brand-color-lighter);}
-  #Zane {background-color: var(--brand-color-lighter);}
-
-  #experience-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    margin-bottom: -1px;
-    z-index: 1;
-  }
-
-.img-container {
-    flex: 1 1 400px;
-}
-
-.img-container img {
-    width: 100%;
-}
-
-
-
-details {
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    padding: .5em .5em 0;
-}
-
-summary {
-    font-weight: bold;
-    margin: -.5em -.5em 0;
-    padding: .5em;
-}
-
-details[open] {
-    padding: .5em;
-}
-
-details[open] summary {
-    border-bottom: 1px solid #aaa;
-    margin-bottom: .5em;
-}
-
-.accordion {
-    background-color: var(--brand-color);
-    color: var(--accent-color);
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: 1px solid white;
-    text-align: left;
-    outline: none;
-    font-size: var(--h3-scale-size);
-    font-family: 'Coda';
-    transition: 0.4s;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-}
-  
-.active, .accordion:hover {
-    background-color: var(--bra);
-}
-  
-.accordion:after {
-    content: '\2023';
-    color: var(--accent-color);
-    font-weight: bold;
-    font-size: 30px;
-    float: right;
-    margin-left: 5px;
-    transition: transform 0.4s ease-in-out;
-}
-  
-.active:after {
-    transform: rotate(90deg);
-}
-  
-.panel {
-    padding: 0 18px;
-    background-color: var(--brand-color-lighter);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
 }
