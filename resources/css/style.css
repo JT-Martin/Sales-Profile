@@ -84,7 +84,7 @@ header {
     position: fixed;
     width: 100%;
     background-color: var(--header-background-color);
-    z-index: 1;
+    z-index: 2;
 }
 
 #header-flex {
@@ -101,7 +101,7 @@ header {
 }
 
 #logo a {
-    font-size: 4vw;
+    font-size: calc(14px + 1vw);
     font-family: Coda, cursive;
     font-weight: 700;
     color: var(--accent-color);
@@ -115,6 +115,7 @@ nav a:hover {
     background-color: var(--header-background-hover);
 }
 
+
 nav a {
     padding: 22.8px calc(5px + 0.7vw);
     font-size: calc(4px + 1.2vw);
@@ -125,6 +126,10 @@ nav a {
 #hero {
     background-color: var(--brand-color);
     padding: 40px 0;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #hero div {
@@ -133,11 +138,11 @@ nav a {
     align-items: center;
     flex-direction: column;
     max-width: 1000px;
-    height: 250px;
-    padding: 40px 0;
+    padding: 20px;
     margin: 0 auto;
     border-radius: 10px;
     color: var(--accent-color);
+    background-color: rgba(0,0,0,0.6);
 }
 
 #hero div * {
